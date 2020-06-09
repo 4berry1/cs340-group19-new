@@ -1,0 +1,23 @@
+<h1>Browse by Merchandise Name</h1>
+
+<form id="searchbox" action="/searchname" method="get" >
+		<input type="text" name="search" id="searchname" placeholder="Search...">
+		<input type="submit" value="Submit">
+</form>
+</select>
+  <TABLE BORDER="5"    WIDTH="90%"   CELLPADDING="4" CELLSPACING="3">
+   <TR>
+      <TH>Title</TH>
+      <TH>Type</TH>
+      <TH>Price</TH>
+      <TH>Purchase</TH>
+   </TR>
+  {{#each searchname}}
+   <TR ALIGN="CENTER">
+      <td id = "titlename">{{title}}</td>
+      <td>{{merchType}}</td>
+      <td>{{price}}</td>
+      <td><button>add to cart</button></td>
+   </TR>
+  {{/each}}
+</TABLE>

@@ -25,6 +25,9 @@ app.use('/search', require('./search.js'));
 app.use('/newsale', require('./newsale.js'));
 app.use('/myitems', require('./myitems.js'));
 app.use('/profile', require('./profile.js'));
+
+app.use('/searchname', require('./searchname.js'));
+
 app.use('/', express.static('public'));
 
 app.use(function(req,res){
